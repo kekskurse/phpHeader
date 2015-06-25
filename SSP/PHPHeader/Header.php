@@ -17,7 +17,7 @@ class Header
 		$html = "";
 		foreach(self::$js as $j)
 		{
-			$html .= '<script type="text/javascript" src="'.j.'"></script>';
+			$html .= '<script type="text/javascript" src="'.$j.'"></script>'."\r\n";
 		}
 		return $html;
 	}
@@ -26,7 +26,7 @@ class Header
 		$html = "";
 		foreach(self::$css as $c)
 		{
-			$html .= '<link rel="stylesheet" href="'.$c.'">';
+			$html .= '<link rel="stylesheet" href="'.$c.'">'."\r\n";
 		}
 		return $html;
 	}
